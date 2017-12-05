@@ -28,7 +28,6 @@ def nbPremiers(n) :
     premiers = []
     if n > 1 :
         for i in range (2,n+1) :
-            print(str(premiers)+" "+str(i)+" "+str([i%p==0 for p in premiers]))
             if True not in [i%p==0 for p in premiers] :
                 premiers.append(i)
     return premiers
